@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:id="@+id/ll"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_margin="1dp"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:text="0"
+                android:padding="5dp"
+                android:gravity="center"
+                android:id="@+id/interest_name"
+                android:layout_height="match_parent" />
+            <CheckBox
+                android:layout_width="match_parent"
+                android:id="@+id/checkbox"
+                android:layout_alignParentRight="true"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

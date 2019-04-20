@@ -1,0 +1,58 @@
+<resources>
+    <string name="app_name">Slothee</string>
+    <string name="notification_channel_id">Edison</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="facebook_app_id">417603608812238</string>
+
+
+    <string name="fa_angle_right">&#xf105;</string>
+    <string name="fa_bell">&#xf0f3;</string>
+    <string name="fa_calendar">&#xf073;</string>
+    <string name="fa_calendar_check">&#xf274;</string>
+    <string name="fa_check_circle">&#xf058;</string>
+    <string name="fa_chevron_left">&#xf053;</string>
+    <string name="fa_cog">&#xf013;</string>
+    <string name="fa_comment_o">&#xf0e5;</string>
+    <string name="fa_comments">&#xf086;</string>
+    <string name="fa_crosshairs">&#xf05b;</string>
+    <string name="fa_ellipsis_h">&#xf141;</string>
+    <string name="fa_ellipsis_v">&#xf142;</string>
+    <string name="fa_envelope">&#xf0e0;</string>
+    <string name="fa_eye">&#xf06e;</string>
+    <string name="fa_facebook">&#xf09a;</string>
+    <string name="fa_file_text_o">&#xf0f6;</string>
+    <string name="fa_filter">&#xf0b0;</string>
+    <string name="fa_google">&#xf1a0;</string>
+    <string name="fa_headphones">&#xf025;</string>
+    <string name="fa_heart_o">&#xf08a;</string>
+    <string name="fa_home">&#xf015;</string>
+    <string name="fa_image">&#xf03e;</string>
+    <string name="fa_address_book">&#xf2b9;</string>
+    <string name="fa_linkedin_square">&#xf08c;</string>
+    <string name="fa_lock">&#xf023;</string>
+    <string name="fa_map_marker">&#xf041;</string>
+    <string name="fa_minus_circle">&#xf056;</string>
+    <string name="fa_paperclip">&#xf0c6;</string>
+    <string name="fa_pencil">&#xf040;</string>
+    <string name="fa_phone_square">&#xf098;</string>
+    <string name="fa_play_circle_o">&#xf01d;</string>
+    <string name="fa_plus_circle">&#xf055;</string>
+    <string name="fa_search">&#xf002;</string>
+    <string name="fa_share">&#xf064;</string>
+    <string name="fa_share_alt">&#xf1e0;</string>
+    <string name="fa_sign_out">&#xf08b;</string>
+    <string name="fa_thumbs_up">&#xf164;</string>
+    <string name="fa_times">&#xf00d;</string>
+    <string name="fa_times_circle">&#xf057;</string>
+    <string name="fa_trash">&#xf1f8;</string>
+    <string name="fa_unlock_alt">&#xf13e;</string>
+    <string name="fa_user">&#xf007;</string>
+    <string name="fa_user_plus">&#xf234;</string>
+    <string name="fa_users">&#xf0c0;</string>
+    <string name="fa_video_camera">&#xf03d;</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_notifications">Notifications</string>
+
+</resources>

@@ -1,0 +1,201 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/ll_header"
+        android:orientation="horizontal"
+
+        >
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_close_black_24dp"
+            android:layout_gravity="center"
+            android:id="@+id/close"
+            android:layout_marginRight="10dp"
+            android:tint="@color/black"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            >
+            <com.edison.Customfonts.Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Post"
+                android:layout_margin="5dp"
+                android:textColor="@color/white"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:id="@+id/upload_feed"
+                android:backgroundTint="@color/black"
+                />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="?attr/actionBarSize"
+        android:id="@+id/ll_data"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="?attr/actionBarSize"
+                    android:src="@drawable/profile_img"
+                    android:padding="3dp"
+                    android:layout_height="?attr/actionBarSize"
+                    android:id="@+id/userimagea"/>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+                    <com.edison.Customfonts.EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp"
+                        android:minHeight="120dp"
+                        android:hint="What's happening?"
+                        android:background="@null"
+                        android:maxLength="200"
+                        android:gravity="left|top"
+                        android:imeOptions="actionDone"
+                        android:id="@+id/feed_description"/>
+                    <com.edison.Customfonts.BoldTextview
+                        android:layout_width="wrap_content"
+                        android:layout_gravity="right|bottom"
+                        android:gravity="right|bottom"
+                        android:paddingRight="10dp"
+                        android:paddingBottom="5dp"
+                        android:text="0/200"
+                        android:textSize="12dp"
+                        android:id="@+id/textcount"
+                        android:layout_height="match_parent"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:orientation="vertical"
+                        android:visibility="gone"
+                        android:layout_height="match_parent"
+                        >
+                        <ImageView
+                            android:id="@+id/feed_image"
+                            android:layout_width="fill_parent"
+                            android:layout_gravity="center_horizontal"
+                            android:layout_height="200dp"
+                            android:layout_marginTop="15dp"/>
+
+                        <!-- Videoview to preview recorded video -->
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <GridView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/imagelist"
+            android:numColumns="3"
+            >
+        </GridView>
+
+
+
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll_progressbar"
+        android:visibility="gone"
+        android:layout_centerVertical="true"
+        android:layout_centerInParent="true"
+        >
+        <com.edison.Customfonts.BoldTextview
+            android:id="@+id/txtPercentage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:textColor="@color/appcolor"
+            android:textSize="30dp" />
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="fill_parent"
+            android:layout_height="20dp"
+            android:layout_marginBottom="35dp"
+            />
+
+    </LinearLayout>
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_above="@+id/btm_layout1"
+        android:visibility="gone"
+        android:background="@color/hash1"></View>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:id="@+id/btm_layout1"
+        android:background="@color/white"
+        android:layout_alignParentBottom="true"
+        >
+        <ImageView
+            android:layout_width="45dp"
+            android:src="@drawable/camera"
+            android:padding="10dp"
+            android:layout_toLeftOf="@+id/choosevideo"
+            android:id="@+id/chooseimage"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:layout_width="45dp"
+            android:src="@drawable/gallery"
+            android:padding="10dp"
+            android:layout_marginRight="5dp"
+            android:id="@+id/choosevideo"
+            android:layout_alignParentRight="true"
+            android:layout_height="match_parent" />
+
+
+
+    </RelativeLayout>
+</RelativeLayout>
+

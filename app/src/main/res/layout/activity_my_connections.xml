@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="13dp"
+                android:id="@+id/back"
+                android:tint="@color/appcolor"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp"/>
+
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center"
+                android:id="@+id/header"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="My Connections"
+                android:textColor="@color/appcolor"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:id="@+id/ll_search"
+                android:layout_height="match_parent"
+                android:visibility="gone"
+                android:orientation="horizontal">
+                <AutoCompleteTextView android:id="@+id/edt_clg"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/light_black"
+                    android:layout_height="match_parent"
+                    android:ellipsize="end"
+                    android:padding="10dp"
+                    android:textCursorDrawable="@null"
+                    android:gravity="left|center"
+                    android:hint="search here...."
+                    android:textColorHint="@color/light_black"
+                    android:singleLine="true"
+                    android:cursorVisible="true"
+                    android:layout_toLeftOf="@+id/clear"
+                    android:backgroundTint="@color/light_black"
+                    xmlns:android="http://schemas.android.com/apk/res/android" />
+                <ImageView
+                    android:id="@+id/clear"
+                    android:layout_width="23dp"
+                    android:layout_centerVertical="true"
+                    android:layout_height="23dp"
+                    android:layout_marginRight="15dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right|center"
+                    android:background="@drawable/ic_clear_black_24dp"
+                    android:onClick="clear"/>
+
+            </RelativeLayout>
+            <ImageView
+                android:id="@+id/searchicon"
+                android:layout_width="23dp"
+                android:layout_height="23dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="right|center"
+                android:background="@drawable/ic_search_black_24dp"
+                android:onClick="clear"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <ListView
+                android:id="@+id/friendsList"
+                android:layout_marginLeft="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:visibility="gone"
+                android:layout_height="match_parent"></ListView>
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:id="@+id/nodatasearch"
+                android:gravity="center"
+                android:visibility="gone"
+                android:layout_gravity="center"
+                android:padding="10dp"
+                android:textColor="@color/red"
+                android:layout_height="match_parent"
+                android:text="No user(s) found..!"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:id="@+id/nodata_layout"
+                android:gravity="center">
+                <com.edison.Customfonts.BoldTextview
+                    android:layout_width="match_parent"
+                    android:id="@+id/nodata"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    android:layout_height="wrap_content"
+                    android:text="You have no connections in your contacts list."/>
+
+                <com.edison.Customfonts.BoldTextview
+                    android:layout_width="match_parent"
+                    android:gravity="center"
+                    android:padding="2dp"
+                    android:layout_height="wrap_content"
+                    android:text="Click here to add friend's"/>
+                <com.edison.Customfonts.Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:text="Find Friends"
+                    android:paddingLeft="15dp"
+                    android:textAllCaps="false"
+                    android:paddingRight="15dp"
+                    android:id="@+id/find_friends"/>
+
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

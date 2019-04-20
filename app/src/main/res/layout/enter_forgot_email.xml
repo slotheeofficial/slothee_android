@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.edison.Customfonts.BoldTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.edison.Customfonts.BoldTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Forgot password?"
+        android:textColor="@color/black"
+        android:textSize="16dp"
+        android:textStyle="bold" />
+
+    <com.edison.Customfonts.NormalTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/light_black"
+        android:text="Enter your registered email id." />
+
+    <com.edison.Customfonts.BoldTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="email id"
+        android:id="@+id/dialog_edit_email"
+        android:textColor="@color/black"
+        android:defaultFocusHighlightEnabled="true"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="?colorAccent"
+        android:padding="5dp"
+        android:inputType="text"
+        android:imeOptions="actionNext"
+        android:singleLine="true"
+        />
+
+
+    <!--<com.edison.Customfonts.EditText-->
+        <!--android:id="@+id/dialog_edit_email"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_margin="30dp"-->
+        <!--android:background="@drawable/edt_bg_3"-->
+        <!--android:hint="email id"-->
+        <!--android:textColorHint="@color/edttextcolor"-->
+        <!--android:singleLine="true"-->
+        <!--android:textColor="@color/black"-->
+        <!--android:imeOptions="actionDone"-->
+        <!--android:padding="10dp" />-->
+
+    <com.edison.Customfonts.BoldTextview
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/hash1" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+        <com.edison.Customfonts.BoldTextview
+            android:id="@+id/dialog_done"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Done"
+            android:layout_gravity="center"
+            android:padding="5dp"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/colorPrimary"
+            android:textSize="18dp" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/hash1" />
+        <com.edison.Customfonts.BoldTextview
+            android:id="@+id/dialog_cancel"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="5dp"
+            android:layout_gravity="center"
+            android:text="Cancel"
+            android:background="?attr/selectableItemBackground"
+            android:textColor="@color/red"
+            android:textSize="18dp" />
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,464 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="13dp"
+            android:id="@+id/back"
+            android:tint="@color/black"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"/>
+
+
+
+        <com.edison.Customfonts.BoldTextview
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:layout_marginRight="?attr/actionBarSize"
+            android:gravity="center|left"
+            android:id="@+id/header"
+            android:paddingLeft="10dp"
+            android:text="Update Profile"
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold" />
+
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:orientation="vertical">
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <RelativeLayout
+                android:layout_width="90dp"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:layout_gravity="center"
+                android:layout_height="100dp">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/profile_img"
+                    android:layout_width="85dp"
+                    android:layout_height="90dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/profile_img"
+                    android:scaleType="centerCrop"
+                    app:civ_border_color="@color/white"
+                    app:civ_border_width="1dp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:src="@drawable/camera_24dp"
+                    android:id="@+id/changeprofilephoto"
+                    />
+
+            </RelativeLayout>
+
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:text="Email"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+                <com.edison.Customfonts.EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/email"
+                    android:singleLine="true"
+                    android:paddingTop="10dp"
+                    android:textSize="15dp"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:imeOptions="actionNext"
+                    android:ellipsize="end"
+                    android:textColorHint="@color/edttextcolor"
+                    android:hint=""/>
+                <!--<com.edison.Customfonts.EditText-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="wrap_content"-->
+                    <!--android:id="@+id/email"-->
+                    <!--android:singleLine="true"-->
+                    <!--android:paddingTop="10dp"-->
+                    <!--android:textSize="15dp"-->
+                    <!--android:textColor="@color/black"-->
+                    <!--android:imeOptions="actionNext"-->
+                    <!--android:ellipsize="end"-->
+                    <!--android:textColorHint="@color/edttextcolor"-->
+                    <!--/>-->
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hash"></View>
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:text="Name"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <com.edison.Customfonts.EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_fstname"
+                    android:singleLine="true"
+                    android:paddingTop="10dp"
+                    android:textSize="15dp"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:imeOptions="actionNext"
+                    android:ellipsize="end"
+                    android:textColorHint="@color/edttextcolor"
+                    android:hint=""/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hash"></View>
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:text="User Name"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                >
+
+                <com.edison.Customfonts.EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/edt_username"
+                    android:singleLine="true"
+                    android:paddingTop="10dp"
+                    android:textSize="15dp"
+                    android:background="@null"
+                    android:textColor="@color/black"
+                    android:imeOptions="actionNext"
+                    android:ellipsize="end"
+                    android:textColorHint="@color/edttextcolor"
+                    android:hint=""/>
+
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hash"></View>
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:text="Contact Number"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="10dp"
+                android:orientation="horizontal"
+                >
+
+                <com.hbb20.CountryCodePicker
+                    android:id="@+id/ccp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:ccp_countryPreference="IN,US,SG"
+                    app:ccp_textSize="14dp"
+                    android:gravity="bottom"
+                    android:layout_gravity="bottom"
+                    app:ccp_autoDetectCountry="true"
+
+                    />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <com.edison.Customfonts.EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/edt_mobile"
+                        android:singleLine="true"
+                        android:textSize="15dp"
+                        android:background="@null"
+                        android:layout_gravity="center|left"
+                        android:gravity="center|left"
+                        android:textColor="@color/black"
+                        android:imeOptions="actionNext"
+                        android:ellipsize="end"
+                        android:inputType="number"
+                        android:digits="0123456789"
+                        android:textColorHint="@color/edttextcolor"
+                        android:hint=""/>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash"></View>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/ll_company"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <com.edison.Customfonts.BoldTextview
+                    android:layout_width="match_parent"
+                    android:text="Company"
+                    android:layout_height="wrap_content" />
+
+
+                <com.edison.Customfonts.EditText
+                    android:id="@+id/txt_company"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textSize="15dp"
+                    android:paddingTop="15dp"
+                    android:gravity="left|bottom"
+                    android:background="@null"
+                    android:hint=""
+                    android:singleLine="true"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hash"></View>
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/ll_desgnation"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <com.edison.Customfonts.BoldTextview
+                    android:layout_width="match_parent"
+                    android:text="Designation"
+                    android:layout_height="wrap_content" />
+
+
+                <com.edison.Customfonts.EditText
+                    android:id="@+id/txt_designantion"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textSize="15dp"
+                    android:paddingTop="10dp"
+                    android:gravity="left|bottom"
+                    android:background="@null"
+                    android:hint=""
+                    android:singleLine="true"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hash"></View>
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:id="@+id/ll_description"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <com.edison.Customfonts.BoldTextview
+                    android:layout_width="match_parent"
+                    android:text="Work philosophy"
+                    android:layout_height="wrap_content" />
+
+
+                <com.edison.Customfonts.EditText
+                    android:id="@+id/txt_description"
+                    android:layout_width="match_parent"
+                    android:textColor="@color/black"
+                    android:layout_height="wrap_content"
+                    android:ellipsize="end"
+                    android:textSize="15dp"
+                    android:paddingTop="10dp"
+                    android:gravity="left|bottom"
+                    android:background="@null"
+                    android:hint=""
+                    android:maxLength="120"
+                    android:singleLine="true"/>
+            </LinearLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/hash"></View>
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+
+
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:text="Gender"
+                android:layout_height="wrap_content" />
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:weightSum="2"
+                >
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:textColor="@color/black"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_height="match_parent" />
+            </LinearLayout>
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_margin="5dp"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:weightSum="1"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:orientation="vertical">
+
+                    <com.edison.Customfonts.BoldTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="DOB" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:id="@+id/selected_dob"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:hint=""
+                            android:textColor="@color/black"
+                            android:paddingTop="10dp"
+                            android:textSize="15dp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash"></View>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.edison.Customfonts.Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Update"
+                android:textSize="17dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:padding="5dp"
+                android:textAllCaps="false"
+                android:id="@+id/updateprofile"
+                android:backgroundTint="@color/black"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                />
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        >
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:padding="13dp"
+            android:id="@+id/backtoinbox"
+            android:tint="@color/appcolor"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_height="match_parent">
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/receiver_name"
+                android:text="Chat"
+                android:paddingRight="15dp"
+                android:paddingLeft="15dp"
+                android:gravity="center|left"
+                android:textSize="20dp"
+                android:textColor="@color/appcolor"/>
+        </LinearLayout>
+
+        <com.edison.Customfonts.BoldTextview
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:textSize="23dp"
+            android:text=""
+            android:gravity="center"
+            android:id="@+id/settings"
+            />
+
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hash1"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="5dp"
+            >
+
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="?attr/actionBarSize"
+                android:stackFromBottom="true"
+                android:divider="@null"
+                android:transcriptMode="normal"
+                android:id="@+id/chat_list">
+
+            </ListView>
+
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/btm_layout"
+            android:paddingBottom="5dp"
+            android:layout_alignParentBottom="true"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_text"
+                android:visibility="visible"
+                android:layout_alignParentBottom="true"
+                android:orientation="horizontal"
+                android:layout_toLeftOf="@+id/chatSendButton">
+
+                <com.edison.Customfonts.EditText
+                    android:id="@+id/edt_msg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginBottom="5dp"
+                    android:layout_toLeftOf="@+id/chooseimage"
+                    android:autoText="true"
+                    android:background="@drawable/input"
+                    android:hint="type message"
+                    android:maxHeight="100dp"
+                    android:inputType="textMultiLine"
+                    android:minHeight="50dp"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="8dp"
+                    android:singleLine="false"
+                    android:textColorHint="#c4c0bd"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:layout_width="45dp"
+                    android:src="@drawable/camera"
+                    android:tint="@color/black"
+                    android:padding="10dp"
+                    android:gravity="center"
+                    android:layout_alignParentBottom="true"
+                    android:layout_toLeftOf="@+id/chooseGallery"
+                    android:id="@+id/chooseimage"
+                    android:layout_height="45dp" />
+                <ImageView
+                    android:layout_width="45dp"
+                    android:src="@drawable/gallery"
+                    android:tint="@color/black"
+                    android:padding="10dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="5dp"
+                    android:id="@+id/chooseGallery"
+                    android:layout_alignParentRight="true"
+                    android:layout_height="45dp" />
+
+
+            </RelativeLayout>
+
+            <ImageView
+                android:id="@+id/chatSendButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="10dp"
+                android:layout_centerVertical="true"
+                android:background="@drawable/circl"
+                android:padding="10dp"
+
+                android:src="@drawable/ic_send_black_24dp" />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

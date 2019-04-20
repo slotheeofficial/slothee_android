@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/card_home_details"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:minHeight="120dp"
+    app:behavior_hideable="false"
+    android:paddingBottom="50dp"
+    app:cardBackgroundColor="@color/white"
+    app:cardCornerRadius="4dp"
+    app:cardElevation="4dp"
+    app:cardUseCompatPadding="true"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.edison.Customfonts.BoldTextview
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:textSize="18dp"
+            android:layout_margin="10dp"
+            android:text="You need a Slothee \n account to continue"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <com.edison.Customfonts.Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sign Up with phone or Email"
+            android:textColor="@color/white"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:textAllCaps="false"
+            android:id="@+id/tap_2_reg"
+            android:backgroundTint="@color/black"
+            />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <LinearLayout
+            android:id="@+id/checkout_layout"
+            android:layout_width="match_parent"
+            android:background="@color/white"
+            android:orientation="horizontal"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="45dp"
+            android:layout_marginLeft="45dp"
+            android:weightSum="2"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/hash1"
+                android:layout_weight="1"></View>
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="OR"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                />
+            <View
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_gravity="center"
+                android:background="@color/hash1"
+                android:layout_weight="1"></View>
+
+        </LinearLayout>
+    <com.edison.Customfonts.BoldTextview
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_gravity="center">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/google_bg"
+                android:padding="6dp"
+                android:id="@+id/googlelogin"
+                android:layout_marginRight="15dp"
+                android:src="@drawable/googlelogo"/>
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="15dp"
+                android:id="@+id/linkedinlogin"
+                android:src="@drawable/facebook"/>
+
+
+
+        </LinearLayout>
+
+        <com.edison.Customfonts.BoldTextview
+            android:layout_width="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="By Signing up you agree to Slothee Plan's User Agreement, Privacy Policy and Cookie Policy"
+            android:layout_height="wrap_content" />
+        <com.edison.Customfonts.BoldTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:layout_gravity="center"
+            android:background="@color/hash1"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="wrap_content"
+                android:text="Already have an account?"
+                android:layout_height="wrap_content" />
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="wrap_content"
+                android:textColor="@color/black"
+                android:text=" Log In"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:id="@+id/redirect_2_login"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>

@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/hash1"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/white"
+            android:orientation="horizontal"
+
+            >
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                android:layout_gravity="center"
+                android:id="@+id/close1"
+                android:padding="15dp"
+                android:tint="@color/black"/>
+
+
+
+        </LinearLayout>
+
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <com.edison.Customfonts.BoldTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="Settings"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+
+
+                    <LinearLayout
+                        android:id="@+id/blocked_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:background="?attr/selectableItemBackground"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Blocked People" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash1" />
+
+                    <LinearLayout
+                        android:id="@+id/muted_list"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:background="?attr/selectableItemBackground"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Muted People" />
+
+
+
+                    </LinearLayout>
+
+
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash1" />
+                    <LinearLayout
+                        android:id="@+id/updateprofile"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:background="?attr/selectableItemBackground"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Update Profile"/>
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash1" />
+                    <LinearLayout
+                        android:id="@+id/updateInterest"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+
+                        android:background="?attr/selectableItemBackground"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Update Interest"/>
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash1" />
+                    <LinearLayout
+                        android:id="@+id/account_settings"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:background="?attr/selectableItemBackground"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Reset Password"/>
+
+
+
+                    </LinearLayout>
+
+
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash1" />
+                    <LinearLayout
+                        android:id="@+id/invitefriends"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:orientation="horizontal"
+                        android:background="?attr/selectableItemBackground"
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Invite People" />
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash1" />
+
+                    <LinearLayout
+                        android:id="@+id/logout"
+                        android:layout_width="match_parent"
+                        android:background="?attr/selectableItemBackground"
+                        android:layout_height="?actionBarSize"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Logout" />
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash1" />
+
+                </LinearLayout>
+
+                <com.edison.Customfonts.BoldTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:text="@string/app_name"
+                    android:visibility="gone"
+                    android:textAllCaps="true"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/website"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Website" />
+
+
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash1" />
+
+                    <LinearLayout
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Email" />
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash1" />
+
+                    <LinearLayout
+                        android:id="@+id/support"
+                        android:visibility="gone"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:orientation="horizontal"
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Support" />
+
+
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <com.edison.Customfonts.BoldTextview
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:visibility="gone"
+                    android:text="Additional information"
+                    android:textAllCaps="true"
+                    android:textSize="17dp"
+                    android:textColor="@color/black"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/white"
+                    android:orientation="vertical">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash1" />
+
+                    <LinearLayout
+                        android:id="@+id/bonusstuff"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Bonus stuff" />
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash1" />
+
+                    <LinearLayout
+                        android:id="@+id/promotion"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="Promotions" />
+
+
+
+                    </LinearLayout>
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:background="@color/hash1" />
+
+                    <LinearLayout
+                        android:id="@+id/moreapps"
+                        android:layout_width="match_parent"
+                        android:layout_height="?actionBarSize"
+                        android:orientation="horizontal"
+                        android:visibility="gone"
+                        android:weightSum="1">
+
+                        <com.edison.Customfonts.BoldTextview
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:gravity="center|left"
+                            android:paddingLeft="10dp"
+                            android:text="More Apps" />
+
+
+
+                    </LinearLayout>
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+
+    </LinearLayout>
+
+</LinearLayout>

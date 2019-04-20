@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainFragment.RegisWithEmail_Fragment">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:id="@+id/edt_name"
+                android:textColor="@color/black"
+                android:defaultFocusHighlightEnabled="true"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                android:padding="5dp"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:id="@+id/edt_email"
+                android:textColor="@color/black"
+                android:defaultFocusHighlightEnabled="true"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                android:inputType="textEmailAddress"
+                android:padding="5dp"
+                android:imeOptions="actionNext"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+            <com.rengwuxian.materialedittext.MaterialEditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:id="@+id/edt_password"
+                android:textColor="@color/black"
+                android:defaultFocusHighlightEnabled="true"
+                app:met_floatingLabel="highlight"
+                app:met_primaryColor="?colorAccent"
+                android:inputType="textPassword"
+                android:padding="5dp"
+                android:imeOptions="actionDone"
+                android:singleLine="true"
+                />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:layout_gravity="right"
+            android:id="@+id/btm_ll"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/circle_bg"
+                    android:padding="8dp"
+                    android:id="@+id/tap_2_reg"
+                    android:src="@drawable/ic_arrow_forward_black_24dp"
+                    />
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/progressbar_register"
+                    android:layout_centerInParent="true"
+                    style="?android:attr/progressBarStyleSmall"
+                    />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+        <com.edison.Customfonts.NormalTextview
+            android:layout_width="match_parent"
+            android:layout_below="@+id/ll_mobile_layout"
+            android:layout_height="wrap_content"
+           android:layout_margin="10dp"
+            android:text="By Signing up you agree to Slothee Plan's User Agreement, Privacy Policy and Cookie Policy."
+            />
+
+    </LinearLayout>
+
+</LinearLayout>

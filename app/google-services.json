@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "939407502408",
+    "firebase_url": "https://sloth-1c088.firebaseio.com",
+    "project_id": "sloth-1c088",
+    "storage_bucket": "sloth-1c088.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:939407502408:android:8f2d11853d0b2771",
+        "android_client_info": {
+          "package_name": "com.sloth"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "939407502408-8h2sno5qluv0abre8qcu57klqt1d9tst.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.sloth",
+            "certificate_hash": "026626163fd9666f84e5c22017dafed261639c44"
+          }
+        },
+        {
+          "client_id": "939407502408-1i1fiis3t323455854s9h09fk71hj9dp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAokgtIKrOFiUO_P0Ox6yMaUNbhSSlAkk8"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "939407502408-1i1fiis3t323455854s9h09fk71hj9dp.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "939407502408-clomn2q70n5cj3fmbvdidk81mptcd21h.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.sloth"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

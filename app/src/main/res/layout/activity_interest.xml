@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/white"
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_margin="20dp"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:layout_marginTop="20dp"
+                android:text="Customize feed based on your interests"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:layout_marginTop="20dp"
+                android:text="Category"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <com.github.paolorotolo.expandableheightlistview.ExpandableHeightGridView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:numColumns="3"
+                android:id="@+id/interstlist">
+
+            </com.github.paolorotolo.expandableheightlistview.ExpandableHeightGridView>
+
+            <co.lujun.androidtagview.TagContainerLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/tech_tagview"
+                android:padding="10dp"
+                app:container_enable_drag="false"
+                android:visibility="gone"
+                app:horizontal_interval="10dp"
+                app:vertical_interval="10dp"
+                app:tag_clickable="true"
+                     />
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="19dp"
+                android:visibility="gone"
+                android:layout_marginTop="20dp"
+                android:text="Lifestyle"
+                />
+
+            <co.lujun.androidtagview.TagContainerLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:id="@+id/lifestyle_tagview"
+                android:padding="10dp"
+                android:visibility="gone"
+                app:container_enable_drag="false"
+                app:horizontal_interval="10dp"
+                app:vertical_interval="10dp"
+                app:tag_clickable="true"
+                 />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <com.edison.Customfonts.BoldTextview
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Skip"
+                    android:textAllCaps="false"
+                    android:layout_gravity="center"
+                    android:id="@+id/skip"
+                    android:padding="10dp"/>
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/circle_bg"
+                        android:padding="8dp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/tap_2_updateInterest"
+                        android:src="@drawable/ic_arrow_forward_black_24dp"
+                        />
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/progressbar_interest"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:paddingRight="8dp"
+                        style="?android:attr/progressBarStyleSmall"
+                        />
+
+                </RelativeLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</LinearLayout>

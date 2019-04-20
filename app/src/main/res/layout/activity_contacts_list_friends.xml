@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:orientation="horizontal"
+            android:weightSum="1">
+
+            <ImageView
+                android:layout_width="?attr/actionBarSize"
+                android:layout_height="?attr/actionBarSize"
+                android:padding="13dp"
+                android:id="@+id/back"
+                android:tint="@color/appcolor"
+                android:src="@drawable/ic_keyboard_backspace_black_24dp"/>
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="?attr/actionBarSize"
+                android:layout_gravity="center"
+                android:layout_marginRight="?attr/actionBarSize"
+                android:gravity="center|left"
+                android:paddingLeft="10dp"
+                android:text="My Contacts"
+                android:textColor="@color/appcolor"
+                android:textSize="18dp"
+                android:textStyle="bold" />
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:id="@+id/app_peope"
+                android:gravity="center|left"
+                android:text="Add"
+                android:visibility="gone"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:textColor="@color/white"
+                android:textSize="18dp" />
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <ListView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:id="@+id/frd_list">
+
+            </ListView>
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

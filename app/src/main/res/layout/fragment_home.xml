@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/swipe_refresh_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<com.prabhat1707.verticalpager.VerticalViewPager-->
+            <!--android:id="@+id/vertical_viewpager"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="match_parent">-->
+        <!--</com.prabhat1707.verticalpager.VerticalViewPager>-->
+
+        <com.edison.Utils.VerticalViewPager
+            android:id="@+id/vertical_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+        <ProgressBar
+                android:id="@+id/load_more_progrss"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+
+            />
+    </RelativeLayout>
+
+
+
+</LinearLayout>

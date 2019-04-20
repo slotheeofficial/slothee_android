@@ -1,0 +1,309 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="2dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:id="@+id/ll"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        >
+        <com.edison.Customfonts.NormalTextview
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:id="@+id/received_date"
+            android:layout_margin="5dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/cmtbg"
+            android:text="November 14 2018"
+            android:paddingBottom="5dp"
+            android:textSize="11dp"
+            android:paddingTop="5dp"
+            android:textColor="@color/dark_gray"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            />
+    </RelativeLayout>
+
+
+    <FrameLayout
+        android:id="@+id/outgoing_layout_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_below="@+id/ll"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="8dp">
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:layout_gravity="bottom|right"
+            android:background="@drawable/balloon_outgoing_normal"
+            android:orientation="horizontal"
+
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:paddingRight="15dp"
+
+                >
+                <RelativeLayout
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:tools="http://schemas.android.com/tools"
+                    android:layout_width="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+
+                    android:layout_height="match_parent" >
+
+                    <ProgressBar
+                        android:id="@+id/sending_image_mprogressbar"
+                        style="?android:attr/progressBarStyleHorizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:max="100"
+                        android:progressTint="@color/appcolor"
+
+                        />
+                    <com.edison.Customfonts.BoldTextview
+                        android:id="@+id/mysentTextProgress"
+                        android:textColor="@color/appcolor"
+                        android:layout_alignLeft="@id/sending_image_mprogressbar"
+                        android:layout_alignRight="@id/sending_image_mprogressbar"
+                        android:background="@android:color/transparent"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true"
+                        android:layout_centerVertical="true"
+                        android:layout_below="@+id/sending_image_mprogressbar"
+                        android:layout_width="wrap_content" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:orientation="horizontal"
+                android:paddingRight="10dp"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/sentImage"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:scaleType="fitCenter"
+                            android:paddingRight="5dp"
+                            android:paddingBottom="3dp"
+                            android:visibility="gone"
+                            />
+
+
+                        <ProgressBar
+                            android:id="@+id/sentimage_mprogressbar"
+                            style="?android:attr/progressBarStyleSmall"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:progressTint="@color/appcolor"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            />
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <com.edison.Customfonts.NormalTextview
+                                    android:id="@+id/sent_msg"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:padding="5dp"
+                                    android:textAllCaps="false"
+                                    android:text="sdsdsds"
+                                    android:autoLink="web"
+                                    android:textColor="@color/black"
+                                    android:textSize="15dp"
+                                    android:textStyle="bold" />
+
+
+
+                            </LinearLayout>
+                        </LinearLayout>
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:paddingRight="5dp"
+                        android:paddingBottom="2dp"
+
+                        android:orientation="horizontal">
+
+                        <TextView
+                            android:id="@+id/sent_timing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="right"
+                            android:textSize="9dp"
+                            android:layout_gravity="right"
+                            android:textAllCaps="false"
+                            android:text=""
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+    </FrameLayout>
+    <FrameLayout
+        android:id="@+id/incoming_layout_bubble"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_below="@+id/ll"
+        android:layout_marginRight="60dp"
+
+        >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="bottom|left"
+            android:background="@drawable/balloon_incoming_normal"
+            android:orientation="horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:orientation="vertical">
+
+
+
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:paddingLeft="5dp"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <ImageView
+                        android:id="@+id/received_image"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="3dp"
+                        android:scaleType="fitCenter"
+                        />
+
+
+
+                    <ProgressBar
+                        android:id="@+id/received_progressbar"
+                        style="?android:attr/progressBarStyleSmall"
+                        android:layout_width="wrap_content"
+                        android:visibility="gone"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:layout_centerVertical="true"
+                        />
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:orientation="horizontal">
+
+                            <com.edison.Customfonts.NormalTextview
+                                android:id="@+id/received_msg"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:autoLink="web"
+                                android:padding="5dp"
+                                android:text="sadsd"
+                                android:textAllCaps="false"
+                                android:textColor="#000"
+                                android:textSize="15dp"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="right"
+                    android:orientation="horizontal"
+                    android:paddingLeft="6dp"
+                    android:paddingRight="5dp"
+                    android:paddingBottom="2dp">
+
+                    <TextView
+                        android:id="@+id/received_timing"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        android:textSize="9dp"
+                        android:textAllCaps="false" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--</android.support.v7.widget.CardView>-->
+
+    </FrameLayout>
+</RelativeLayout>

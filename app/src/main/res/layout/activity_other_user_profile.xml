@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/otheruserscroll"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="1">
+                <ImageView
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:gravity="center"
+                    android:src="@drawable/ic_keyboard_backspace_black_24dp"
+                    android:tint="@color/black"
+                    android:padding="15dp"
+                    android:id="@+id/backicon"
+                    />
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    >
+                    <com.edison.Customfonts.BoldTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:gravity="center"
+                        android:id="@+id/username"
+                        android:textStyle="bold"
+                        android:layout_gravity="center"
+                        android:textSize="22dp"
+                        android:textColor="@color/black"/>
+                </LinearLayout>
+                <com.edison.Customfonts.BoldTextview
+                    android:layout_width="?attr/actionBarSize"
+                    android:layout_height="?attr/actionBarSize"
+                    android:textSize="23dp"
+                    android:text=""
+                    android:gravity="center"
+                    android:id="@+id/settings"
+                    />
+
+            </LinearLayout>
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="top"
+                android:layout_gravity="center"
+                android:layout_height="wrap_content">
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:layout_width="150dp"
+                    android:layout_height="150dp"
+                    android:layout_centerInParent="true"
+                    android:id="@+id/user_image"
+                    android:layout_margin="10dp"
+                    android:layout_alignParentTop="true"
+                    android:src="@drawable/profile_img"/>
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    style="?android:attr/progressBarStyleSmall"
+                    android:id="@+id/grpimageprogressbar"/>
+
+            </RelativeLayout>
+
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading... "
+                android:gravity="center"
+                android:id="@+id/auto_username"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                android:textColor="@color/black"/>
+            <com.edison.Customfonts.NormalTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading... "
+                android:gravity="center"
+                android:id="@+id/company"
+                android:textColor="@color/black"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                />
+            <com.edison.Customfonts.NormalTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Loading... "
+                android:gravity="center"
+                android:id="@+id/description"
+                android:layout_gravity="center"
+                android:layout_margin="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="5dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:id="@+id/ll_status"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".25"></LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:id="@+id/ll_connect"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nearbyuser_btn"
+                    >
+                    <com.edison.Customfonts.BoldTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Connect"
+                        android:id="@+id/connect"
+                        android:background="?attr/selectableItemBackground"
+                        android:textColor="@color/appcolor"
+                        android:gravity="center"
+                        android:padding="10dp"/>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".1"></LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_weight=".7"
+                    android:id="@+id/ll_reject"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/nearbyuser_btn"
+                    >
+                    <com.edison.Customfonts.BoldTextview
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Reject"
+                        android:id="@+id/reject"
+                        android:background="?attr/selectableItemBackground"
+                        android:textColor="@color/appcolor"
+                        android:gravity="center"
+                        android:padding="10dp"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight=".2"></LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="10dp"
+                android:weightSum="3">
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/ll_otheruser_connectiton"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <com.edison.Customfonts.BoldTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:id="@+id/num_of_connection"
+                        android:textSize="25dp"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+                    <com.edison.Customfonts.NormalTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Connections"
+                        android:padding="1dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <com.edison.Customfonts.BoldTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="25dp"
+                        android:id="@+id/num_of_post"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+                    <com.edison.Customfonts.NormalTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Posts"
+                        android:padding="1dp"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:orientation="vertical"
+                    android:gravity="center">
+                    <com.edison.Customfonts.BoldTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textSize="25dp"
+                        android:id="@+id/num_of_views"
+                        android:textStyle="bold"
+                        android:textColor="@color/black"
+                        />
+                    <com.edison.Customfonts.NormalTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Views"
+                        android:padding="1dp"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ll_manageconnection"
+                >
+                <android.support.v7.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="20dp"
+                    android:elevation="8dp">
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+                            <com.edison.Customfonts.BoldTextview
+                                android:layout_width="match_parent"
+                                android:text="No pending invitations"
+                                android:padding="10dp"
+                                android:id="@+id/conection_status"
+                                android:layout_weight="1
+"
+                                android:layout_height="wrap_content"
+                                />
+                            <com.edison.Customfonts.BoldTextview
+                                android:layout_width="wrap_content"
+                                android:text="VIEW ALL"
+                                android:layout_gravity="right"
+                                android:padding="10dp"
+                                android:id="@+id/viewAllConection"
+                                android:textColor="@color/appcolor"
+                                android:layout_height="wrap_content"
+                                />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content">
+
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </android.support.v7.widget.CardView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:visibility="gone"
+                    android:id="@+id/ll_nodata"
+                    android:orientation="vertical"
+                    >
+                    <ImageView
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:src="@drawable/noposts"
+                        android:tint="@color/appcolor"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="50dp"
+                        />
+                    <com.edison.Customfonts.BoldTextview
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:gravity="center"
+                        android:id="@+id/nomessage"
+                        android:layout_margin="15dp"
+                        android:paddingLeft="10dp"
+                        android:textStyle="bold"
+                        android:text="No Posts Yet..!"/>
+                </LinearLayout>
+
+                <com.github.paolorotolo.expandableheightlistview.ExpandableHeightGridView
+                    android:layout_width="match_parent"
+                    android:numColumns="3"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/postlist">
+
+                </com.github.paolorotolo.expandableheightlistview.ExpandableHeightGridView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1">
+        <ImageView
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:gravity="center"
+            android:src="@drawable/ic_keyboard_backspace_black_24dp"
+            android:tint="@color/black"
+            android:padding="15dp"
+            android:id="@+id/backIcon"
+            />
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            >
+            <com.edison.Customfonts.BoldTextview
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:gravity="center"
+                android:id="@+id/hastagname"
+                android:textStyle="bold"
+                android:layout_gravity="center"
+                android:textSize="22dp"
+                android:textColor="@color/black"/>
+        </LinearLayout>
+        <com.edison.Customfonts.BoldTextview
+            android:layout_width="?attr/actionBarSize"
+            android:layout_height="?attr/actionBarSize"
+            android:textSize="23dp"
+            android:text=""
+
+            android:gravity="center"
+            android:id="@+id/settings"
+            />
+
+    </LinearLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <!--<android.support.v4.widget.SwipeRefreshLayout-->
+        <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+        <!--android:id="@+id/swipe_refresh_layout"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--<com.prabhat1707.verticalpager.VerticalViewPager-->
+        <!--android:id="@+id/vertical_viewpager"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent">-->
+        <!--</com.prabhat1707.verticalpager.VerticalViewPager>-->
+
+        <com.edison.Utils.VerticalViewPager
+            android:id="@+id/vertical_viewpager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+        <!--</android.support.v4.widget.SwipeRefreshLayout>-->
+        <ProgressBar
+            android:id="@+id/load_more_progrss"
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>
